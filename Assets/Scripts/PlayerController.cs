@@ -20,6 +20,8 @@ namespace TarodevController
         private Vector2 _frameVelocity;
         private bool _cachedQueryStartInColliders;
 
+        public bool gravity;
+
         #region Interface
 
         public Vector2 FrameInput => _frameInput.Move;
@@ -32,6 +34,8 @@ namespace TarodevController
 
         private void Awake()
         {
+            gravity = true;
+            
             _rb = GetComponent<Rigidbody2D>();
             _col = GetComponent<CapsuleCollider2D>();
 
@@ -66,15 +70,30 @@ namespace TarodevController
             }
         }
 
+        public void Stop()
+        {
+            gravity = false;
+        }
+
+        public void Go()
+        {
+            gravity = true;
+        }
+
         private void FixedUpdate()
         {
-            CheckCollisions();
+            //this turns off the movement script if Stop() is called.
+            if (gravity)
+            {
+                CheckCollisions();
 
-            HandleJump();
-            HandleDirection();
-            HandleGravity();
+                HandleJump();
+                HandleDirection();
+                HandleGravity();
             
-            ApplyMovement();
+                ApplyMovement();
+            }
+            
         }
 
         #region Collisions
@@ -179,6 +198,7 @@ namespace TarodevController
             {
                 var inAirGravity = _stats.FallAcceleration;
                 if (_endedJumpEarly && _frameVelocity.y > 0) inAirGravity *= _stats.JumpEndEarlyGravityModifier;
+                
                 _frameVelocity.y = Mathf.MoveTowards(_frameVelocity.y, -_stats.MaxFallSpeed, inAirGravity * Time.fixedDeltaTime);
             }
         }
