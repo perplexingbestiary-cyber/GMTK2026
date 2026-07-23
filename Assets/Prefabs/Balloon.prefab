@@ -105,7 +105,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 265cda8e813fb41939e0c865f325cf7e, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -153,9 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15d817246cd304e34aeea6689d747f82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BalloonGuys
-  collider: {fileID: 5312500342864998601}
-  desiredHeight: 0
-  desiredWidth: 0
+  desiredHeight: 1
+  desiredWidth: 1
   speed: 120
   triggered: 0
 --- !u!61 &862037959267399419
@@ -202,8 +201,8 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Size: {x: 1.15, y: 1.12}
+  m_EdgeRadius: 0.2
 --- !u!50 &5590293701537581034
 Rigidbody2D:
   serializedVersion: 5
