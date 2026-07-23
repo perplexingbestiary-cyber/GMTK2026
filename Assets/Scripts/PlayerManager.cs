@@ -7,9 +7,11 @@ public class PlayerManager : MonoBehaviour
     public bool playerMovementOn;
     public bool zeroGMovementOn;
     public bool fireOn;
-    public bool stopNoGravity;
+
+    public bool timerOn;
 
     public float countDown;
+    
 
 
     public PlayerController playerController;
@@ -21,6 +23,7 @@ public class PlayerManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        timerOn = false;
         gravity = true;
         playerMovementOn = true;
         zeroGMovementOn = false;
@@ -30,14 +33,21 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K))
+
+        if (Input.GetKeyDown(KeyCode.K) && !gravity)
         {
-            stopNoGravity = true;
+            gravity = true;
         }
-        if (stopNoGravity == false)
+        else if (Input.GetKeyDown(KeyCode.K) && gravity)
+        {
+            gravity = false;
+        }
+
+        if (timerOn)
         {
             currentTime += Time.deltaTime;
         }
+
         //currentTime += Time.deltaTime;
 
         if(currentTime > countDown && !gravity)
