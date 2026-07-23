@@ -10,6 +10,9 @@ public class CameraFollow : MonoBehaviour
 
     public void Start()
     {
+        //Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
         offset = new Vector3(0f, 3.4f, 0f);
        // QualitySettings.vSyncCount = 0; // Set vSyncCount to 0 so that using .targetFrameRate is enabled.
        // Application.targetFrameRate = 4;
