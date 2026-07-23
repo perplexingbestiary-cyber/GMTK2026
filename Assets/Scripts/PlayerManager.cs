@@ -6,8 +6,10 @@ public class PlayerManager : MonoBehaviour
     public bool gravity;
     public bool playerMovementOn;
     public bool zeroGMovementOn;
+    public bool fireOn;
     public PlayerController playerController;
     public ZeroGMovementController zeroGMovementController;
+    public FireExtinguisherController fireExtinguisher;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,6 +17,7 @@ public class PlayerManager : MonoBehaviour
         gravity = false;
         playerMovementOn = true;
         zeroGMovementOn = false;
+        fireOn = false;
     }
 
     // Update is called once per frame
