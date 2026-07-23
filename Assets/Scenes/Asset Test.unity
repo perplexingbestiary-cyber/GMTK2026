@@ -245,6 +245,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2570606977008457378, guid: dc4a1cf43450f43eb9c125c80db4337e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.59
+      objectReference: {fileID: 0}
     - target: {fileID: 4605932039470534736, guid: dc4a1cf43450f43eb9c125c80db4337e, type: 3}
       propertyPath: m_IncludeLayers.m_Bits
       value: 0

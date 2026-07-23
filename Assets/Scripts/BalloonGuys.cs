@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class BalloonGuys : MonoBehaviour
 {
-    public BoxCollider2D collider;
+    //public BoxCollider2D collider;
+    //public GameObject Balloon;
     public float desiredHeight;
     public float desiredWidth;
     public float speed;
@@ -22,7 +23,8 @@ public class BalloonGuys : MonoBehaviour
         desiredHeight += Time.deltaTime * speed;
         desiredWidth += Time.deltaTime * speed;
 
-        collider.size = new Vector2(desiredWidth, desiredHeight);
+        //collider.size = new Vector2(desiredWidth, desiredHeight);
+        transform.localScale = new Vector2(desiredWidth, desiredHeight);
         }
         
     }
