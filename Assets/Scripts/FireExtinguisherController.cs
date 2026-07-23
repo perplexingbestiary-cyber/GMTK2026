@@ -6,6 +6,7 @@ public class FireExtinguisherController : MonoBehaviour
     public Camera mainCamera;
     public Rigidbody2D rigidbody2D;
     public float thrust;
+    public GameObject Thruster;
 
     void Update()
     {
@@ -33,7 +34,14 @@ public class FireExtinguisherController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             rigidbody2D.AddForce(-direction * thrust, ForceMode2D.Force);
+            Thruster.SetActive(true);
+            Invoke(nameof(ThrusterOff), 0.3f);
             Debug.Log("moving");
         }
+    }
+
+    public void ThrusterOff()
+    {
+        Thruster.SetActive(false);
     }
 }
