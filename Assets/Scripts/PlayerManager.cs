@@ -7,9 +7,15 @@ public class PlayerManager : MonoBehaviour
     public bool playerMovementOn;
     public bool zeroGMovementOn;
     public bool fireOn;
+
+    public float countDown;
+
+
     public PlayerController playerController;
     public ZeroGMovementController zeroGMovementController;
     public FireExtinguisherController fireExtinguisher;
+
+    public float currentTime;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,6 +29,20 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        currentTime += Time.deltaTime;
+
+        if(currentTime > countDown && !gravity)
+        {
+           gravity = true;
+            currentTime = 0;
+        }
+        else if(currentTime > countDown && gravity)
+        {
+            gravity = false;
+            currentTime = 0;
+        }
+
+
         if (!gravity && playerMovementOn)
         {
             playerController.Stop();
