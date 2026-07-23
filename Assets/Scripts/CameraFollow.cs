@@ -11,6 +11,8 @@ public class CameraFollow : MonoBehaviour
     public void Start()
     {
         offset = new Vector3(0f, 3.4f, 0f);
+       // QualitySettings.vSyncCount = 0; // Set vSyncCount to 0 so that using .targetFrameRate is enabled.
+       // Application.targetFrameRate = 4;
 
     }
 
@@ -19,3 +21,5 @@ public class CameraFollow : MonoBehaviour
         transform.position = Vector3.SmoothDamp(transform.position, target.position + offset, ref velocity, smoothTime);
     }
 }
+        
+
