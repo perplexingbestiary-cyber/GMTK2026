@@ -6,12 +6,15 @@ public class CameraFollow : MonoBehaviour
     public Vector3 offset;
     public float smoothTime = 0.3f;
 
+    public bool cursorVisible;
+
     private Vector3 velocity;
 
     public void Start()
     {
         //Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        
+        
 
         offset = new Vector3(0f, 3.4f, 0f);
        // QualitySettings.vSyncCount = 0; // Set vSyncCount to 0 so that using .targetFrameRate is enabled.
@@ -21,6 +24,15 @@ public class CameraFollow : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (!cursorVisible && Cursor.visible)
+        {
+          Cursor.visible = false;  
+        }
+        else if (cursorVisible && !Cursor.visible)
+        {
+            Cursor.visible = true;  
+        }
+
         transform.position = Vector3.SmoothDamp(transform.position, target.position + offset, ref velocity, smoothTime);
     }
 }
