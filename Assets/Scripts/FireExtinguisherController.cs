@@ -7,10 +7,14 @@ public class FireExtinguisherController : MonoBehaviour
     public Rigidbody2D rigidbody2D;
     public float thrust;
     public GameObject Thruster;
+    public bool ready;
+    public float currentTime;
 
     void Update()
     {
         
+        currentTime += Time.deltaTime;
+
 
         if (mainCamera == null) mainCamera = Camera.main;
         if (gun == null) gun = transform;
@@ -30,12 +34,18 @@ public class FireExtinguisherController : MonoBehaviour
         // 5. Apply rotation (Quaternion.Euler for 2D Z-axis rotation)
         // Subtract 90 degrees if your sprite faces right by default, adjust as needed
         gun.rotation = Quaternion.Euler(0, 0, angle);
+        if(currentTime > 1)
+        {
+            ready = true;
+        }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) && ready)
         {
             rigidbody2D.AddForce(-direction * thrust, ForceMode2D.Force);
             Thruster.SetActive(true);
             Invoke(nameof(ThrusterOff), 0.3f);
+            ready = false;
+            currentTime = 0;
             Debug.Log("moving");
         }
     }
