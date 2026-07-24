@@ -218,3 +218,5 @@ MonoBehaviour:
   geyserOn: 0
   currentTime: 0
   GeyserObject: {fileID: 4571941412258872156}
+  On: 3
+  Off: 7
