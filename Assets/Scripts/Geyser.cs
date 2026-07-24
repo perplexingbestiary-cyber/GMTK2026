@@ -5,14 +5,24 @@ public class Geyser : MonoBehaviour
     public bool geyserOn;
     public float currentTime;
     public GameObject GeyserObject;
+    public bool offset;
 
     public float On;
     public float Off;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        GeyserObject.SetActive(false);
+        if (offset)
+        {
+            GeyserObject.SetActive(true);
+        geyserOn = true;
+        }
+        else if (!offset)
+        {
+            GeyserObject.SetActive(false);
         geyserOn = false;
+        }
+        
     }
 
     // Update is called once per frame
