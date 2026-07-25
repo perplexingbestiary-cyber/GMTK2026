@@ -16,7 +16,7 @@ public class CameraFollow : MonoBehaviour
         
         
 
-        offset = new Vector3(0f, 3.4f, 0f);
+        offset = new Vector3(0f, 1f, 0f);
        // QualitySettings.vSyncCount = 0; // Set vSyncCount to 0 so that using .targetFrameRate is enabled.
        // Application.targetFrameRate = 4;
 
