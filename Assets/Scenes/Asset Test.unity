@@ -16133,11 +16133,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
-<<<<<<< Updated upstream
 --- !u!1 &442943113
-=======
 --- !u!1 &432403347
->>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16145,22 +16142,18 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< Updated upstream
   - component: {fileID: 442943115}
   - component: {fileID: 442943114}
   m_Layer: 0
   m_Name: base tiles_0 (60)
-=======
   - component: {fileID: 432403348}
   m_Layer: 0
   m_Name: RedAnchor
->>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< Updated upstream
 --- !u!212 &442943114
 SpriteRenderer:
   serializedVersion: 2
@@ -16221,27 +16214,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
 --- !u!4 &442943115
-=======
 --- !u!4 &432403348
->>>>>>> Stashed changes
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
   m_GameObject: {fileID: 442943113}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 51.06, y: 120.25, z: 0}
   m_LocalScale: {x: 0.10036763, y: 0.100226484, z: 0.10036763}
-=======
   m_GameObject: {fileID: 432403347}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 60.505753, y: 115.01793, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
->>>>>>> Stashed changes
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -21042,19 +21030,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2570606977008457378, guid: dc4a1cf43450f43eb9c125c80db4337e, type: 3}
       propertyPath: m_LocalPosition.x
-<<<<<<< Updated upstream
       value: 56.8
       objectReference: {fileID: 0}
     - target: {fileID: 2570606977008457378, guid: dc4a1cf43450f43eb9c125c80db4337e, type: 3}
       propertyPath: m_LocalPosition.y
       value: 193.6
-=======
       value: 76.8
       objectReference: {fileID: 0}
     - target: {fileID: 2570606977008457378, guid: dc4a1cf43450f43eb9c125c80db4337e, type: 3}
       propertyPath: m_LocalPosition.y
       value: 77.5
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 3096591830260318028, guid: dc4a1cf43450f43eb9c125c80db4337e, type: 3}
       propertyPath: m_Enabled
@@ -22654,11 +22639,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
 --- !u!1 &670366689
-=======
 --- !u!1 &664857601
->>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -22666,22 +22648,18 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< Updated upstream
   - component: {fileID: 670366691}
   - component: {fileID: 670366690}
   m_Layer: 0
   m_Name: background pipe middle_0 (35)
-=======
   - component: {fileID: 664857602}
   m_Layer: 8
   m_Name: GreenAnchor
->>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< Updated upstream
 --- !u!212 &670366690
 SpriteRenderer:
   serializedVersion: 2
@@ -22742,15 +22720,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
 --- !u!4 &670366691
-=======
 --- !u!4 &664857602
->>>>>>> Stashed changes
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
   m_GameObject: {fileID: 670366689}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0.0000029504295}
@@ -22760,7 +22735,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
-=======
   m_GameObject: {fileID: 664857601}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
@@ -22770,7 +22744,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!1001 &671976991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40173,11 +40146,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
 --- !u!1 &1215018145
-=======
 --- !u!1 &1218811157
->>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40185,22 +40155,18 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< Updated upstream
   - component: {fileID: 1215018147}
   - component: {fileID: 1215018146}
   m_Layer: 0
   m_Name: base tiles_0 (320)
-=======
   - component: {fileID: 1218811158}
   m_Layer: 8
   m_Name: EndAnchor
->>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< Updated upstream
 --- !u!212 &1215018146
 SpriteRenderer:
   serializedVersion: 2
@@ -40261,15 +40227,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
 --- !u!4 &1215018147
-=======
 --- !u!4 &1218811158
->>>>>>> Stashed changes
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
   m_GameObject: {fileID: 1215018145}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -40457,13 +40420,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -49.03, y: 119.99, z: 0}
   m_LocalScale: {x: 0.10036763, y: 0.100226484, z: 0.10036763}
-=======
   m_GameObject: {fileID: 1218811157}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 60.505753, y: 152.31793, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
->>>>>>> Stashed changes
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -43341,7 +43302,6 @@ PrefabInstance:
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-<<<<<<< Updated upstream
   m_Modification:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
@@ -43407,7 +43367,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 391497accba274f388cfe33fe3bd33f8, type: 3}
-=======
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -43479,7 +43438,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!1 &1307569341
 GameObject:
   m_ObjectHideFlags: 0
@@ -46583,7 +46541,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
 --- !u!1 &1403601641
 GameObject:
   m_ObjectHideFlags: 0
@@ -46771,8 +46728,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
->>>>>>> Stashed changes
 --- !u!1 &1419445887
 GameObject:
   m_ObjectHideFlags: 0
@@ -71645,7 +71600,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
 --- !u!1 &2141107419
 GameObject:
   m_ObjectHideFlags: 0
@@ -71737,13 +71691,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
 --- !u!4 &2140596309 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3753161078690208108, guid: 674997644aa4242c58e0b07483787766, type: 3}
   m_PrefabInstance: {fileID: 5290847594840006179}
   m_PrefabAsset: {fileID: 0}
->>>>>>> Stashed changes
 --- !u!1001 &2145898322
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71972,11 +71924,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 508296216018425971, guid: 674997644aa4242c58e0b07483787766, type: 3}
       propertyPath: m_LocalPosition.y
-<<<<<<< Updated upstream
       value: -0.3
-=======
       value: 33.80793
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 508296216018425971, guid: 674997644aa4242c58e0b07483787766, type: 3}
       propertyPath: m_LocalPosition.z
