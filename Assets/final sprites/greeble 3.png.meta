@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6c9b07564dc32422387eb483ee0a8972
+guid: 168f45e648b8b4be18e491ad419bcb1d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8207380672740664011
-    second: steam_0
+      213: 5458941149096933786
+    second: greeble 3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: steam_0
+      name: greeble 3_0
       rect:
         serializedVersion: 2
-        x: 316
-        y: 132
-        width: 302
-        height: 854
+        x: 182
+        y: 228
+        width: 593
+        height: 595
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bc22d1fbc3976e170800000000000000
-      internalID: 8207380672740664011
+      spriteID: a997fa96d0e02cb40800000000000000
+      internalID: 5458941149096933786
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d2a705b263b84469f97463f61f1647f5
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      steam_0: 8207380672740664011
+      greeble 3_0: 5458941149096933786
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
