@@ -10,7 +10,7 @@ public class KeyCardScript : MonoBehaviour
     public GameObject Sprite;
     public GameObject Gate;
 
-    void OnTriggerEnter2d()
+    void OnTriggerEnter2D()
     {
         Sprite.SetActive(false);
         Gate.SetActive(false);

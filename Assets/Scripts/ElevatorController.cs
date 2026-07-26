@@ -10,6 +10,8 @@ public class ElevatorController : MonoBehaviour
     public Transform Red;
     public Transform End;
 
+    public PlayerHitboxController playerHitbox;
+
     //public bool white;
     //public bool green;
     //public bool red;
@@ -22,11 +24,21 @@ public class ElevatorController : MonoBehaviour
     
     public bool closedDoors;
     public bool playerInside;
+    public GameObject Barrier;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         noKeyCard = true;
+    }
+
+    void OnTriggerEnter2D()
+    {
+        playerInside = true;
+    }
+    void OnTriggerExit2D()
+    {
+        playerInside = false;
     }
 
     // Update is called once per frame
@@ -43,10 +55,11 @@ public class ElevatorController : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, White.position, step);
             
             }
-            else if(Vector2.Distance(transform.position, White.position) >= 0.001f)
+            else if(Vector2.Distance(transform.position, White.position) <= 0.001f)
             {
                 noKeyCard = false;
                 closedDoors = false;
+                playerHitbox.White();
             }
         }
 
@@ -57,10 +70,11 @@ public class ElevatorController : MonoBehaviour
             {
             transform.position = Vector2.MoveTowards(transform.position, Green.position, step);
             } 
-            else if(Vector2.Distance(transform.position, Green.position) >= 0.001f)
+            else if(Vector2.Distance(transform.position, Green.position) <= 0.001f)
             {
                 greenKeyCard = false;
                 closedDoors = false;
+                playerHitbox.Green();
             }
         }  
 
@@ -71,10 +85,11 @@ public class ElevatorController : MonoBehaviour
             {
             transform.position = Vector2.MoveTowards(transform.position, Red.position, step);
             } 
-            else if(Vector2.Distance(transform.position, Red.position) >= 0.001f)
+            else if(Vector2.Distance(transform.position, Red.position) <= 0.001f)
             {
                 redKeyCard = false;
                 closedDoors = false;
+                playerHitbox.Red();
             }
         } 
 
@@ -85,19 +100,29 @@ public class ElevatorController : MonoBehaviour
             {
             transform.position = Vector2.MoveTowards(transform.position, End.position, step);
             } 
-            else if(Vector2.Distance(transform.position, End.position) >= 0.001f)
+            else if(Vector2.Distance(transform.position, End.position) <= 0.001f)
             {
                 endKeyCard = false;
                 closedDoors = false;
             }
-        }    
-                /*
-        if (Input.GetKey(KeyCode.UpArrow))
-            transform.position += Vector3.up * speed * Time.deltaTime;
-            
-        if (Input.GetKey(KeyCode.DownArrow))
-            transform.position += Vector3.down * speed * Time.deltaTime;
-            */
+        }
+        /*
+if (Input.GetKey(KeyCode.UpArrow))
+    transform.position += Vector3.up * speed * Time.deltaTime;
+
+if (Input.GetKey(KeyCode.DownArrow))
+    transform.position += Vector3.down * speed * Time.deltaTime;
+    */
+
+        if (closedDoors)
+        {
+            Barrier.SetActive(true);
+        }
+        else if (!closedDoors)
+        {
+            Barrier.SetActive(false);
+        }
+
     }
 
 
