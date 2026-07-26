@@ -32,7 +32,7 @@ public class ElevatorController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
+        
         float step = Time.deltaTime * speed;
         if(playerInside && noKeyCard)
         {
