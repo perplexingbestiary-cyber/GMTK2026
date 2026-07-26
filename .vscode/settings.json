@@ -67,6 +67,6 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "Untitled.slnx",
+    "dotnet.defaultSolution": "GMTK2026.slnx",
     "dotnet.enableWorkspaceBasedDevelopment": false
 }
